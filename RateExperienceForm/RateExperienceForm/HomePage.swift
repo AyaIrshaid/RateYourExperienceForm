@@ -15,7 +15,7 @@ struct HomePage: View {
                 .font(.largeTitle)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.indigo)
+        .background(Color.blue)
     }
 }
 
