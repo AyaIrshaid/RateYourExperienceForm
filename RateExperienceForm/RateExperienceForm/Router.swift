@@ -20,4 +20,5 @@ public struct Router {
         let hostingController = UIHostingController(rootView: HomePage())
         context.navigationController?.pushViewController(hostingController, animated: true)
     }
+    
 }
