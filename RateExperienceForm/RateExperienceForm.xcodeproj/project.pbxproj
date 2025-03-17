@@ -6,7 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8A651ED2F5887AD2B79D37AE /* Pods_RateExperienceForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F03960E9EC0C530C7C39CBE /* Pods_RateExperienceForm.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		2F03960E9EC0C530C7C39CBE /* Pods_RateExperienceForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RateExperienceForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		721483BA364BB8B65E898181 /* Pods-RateExperienceForm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RateExperienceForm.debug.xcconfig"; path = "Target Support Files/Pods-RateExperienceForm/Pods-RateExperienceForm.debug.xcconfig"; sourceTree = "<group>"; };
+		871C0405CF2A70D20A8E5630 /* Pods-RateExperienceForm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RateExperienceForm.release.xcconfig"; path = "Target Support Files/Pods-RateExperienceForm/Pods-RateExperienceForm.release.xcconfig"; sourceTree = "<group>"; };
 		9B933D332D4A260C00657928 /* RateExperienceForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RateExperienceForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B933D512D4A2AE300657928 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,18 +44,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A651ED2F5887AD2B79D37AE /* Pods_RateExperienceForm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6087B7CCA99AA1D7BA7A457F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F03960E9EC0C530C7C39CBE /* Pods_RateExperienceForm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B933D292D4A260C00657928 = {
 			isa = PBXGroup;
 			children = (
 				9B933D512D4A2AE300657928 /* Package.swift */,
 				9B933D352D4A260C00657928 /* RateExperienceForm */,
 				9B933D342D4A260C00657928 /* Products */,
+				C36778B1EE22A5452D9FE0C2 /* Pods */,
+				6087B7CCA99AA1D7BA7A457F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +76,16 @@
 				9B933D332D4A260C00657928 /* RateExperienceForm.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C36778B1EE22A5452D9FE0C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				721483BA364BB8B65E898181 /* Pods-RateExperienceForm.debug.xcconfig */,
+				871C0405CF2A70D20A8E5630 /* Pods-RateExperienceForm.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +105,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B933D3B2D4A260C00657928 /* Build configuration list for PBXNativeTarget "RateExperienceForm" */;
 			buildPhases = (
+				48E632957E41278856228AF3 /* [CP] Check Pods Manifest.lock */,
 				9B933D2E2D4A260C00657928 /* Headers */,
 				9B933D2F2D4A260C00657928 /* Sources */,
 				9B933D302D4A260C00657928 /* Frameworks */,
@@ -90,8 +119,6 @@
 				9B933D352D4A260C00657928 /* RateExperienceForm */,
 			);
 			name = RateExperienceForm;
-			packageProductDependencies = (
-			);
 			productName = RateExperienceForm;
 			productReference = 9B933D332D4A260C00657928 /* RateExperienceForm.framework */;
 			productType = "com.apple.product-type.framework";
@@ -139,6 +166,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		48E632957E41278856228AF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RateExperienceForm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9B933D2F2D4A260C00657928 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -152,6 +204,7 @@
 /* Begin XCBuildConfiguration section */
 		9B933D3C2D4A260C00657928 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 721483BA364BB8B65E898181 /* Pods-RateExperienceForm.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -189,6 +242,7 @@
 		};
 		9B933D3D2D4A260C00657928 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 871C0405CF2A70D20A8E5630 /* Pods-RateExperienceForm.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+framework module Pods_RateExperienceForm {
+  umbrella header "Pods-RateExperienceForm-umbrella.h"
+
+  export *
+  module * { export * }
+}
