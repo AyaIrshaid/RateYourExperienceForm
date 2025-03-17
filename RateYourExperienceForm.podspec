@@ -12,5 +12,5 @@ spec.source_files   = "RateExperienceForm/RateExperienceForm/**/*.{h,swift}"
 spec.resources      = "RateExperienceForm/RateExperienceForm/Assets.xcassets"
 spec.swift_version  = "5.0"
 spec.requires_arc   = true
-spec.dependency "lottie-ios"
+spec.dependency "SwiftLint"
 end
